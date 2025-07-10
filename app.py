@@ -16,7 +16,7 @@ def send_whatsapp_message():
 
     message = client.messages.create(
         from_=from_number,
-        body=f"⏰ Drink Water Reminder - {datetime.now().strftime('%I:%M %p')}",
+        body=f"⏰ Drink Water Reminder - 💧 Hey! Time to drink water. Stay hydrated and healthy!",
         to=to_number
     )
     print(f"Sent at {datetime.now()}: {message.sid}")
